@@ -1,0 +1,9 @@
+机械备件逆向重建与修复
+
+First-party project source is distributed under the root LICENSE.
+
+The project uses separately installed COLMAP, CadQuery/OpenCascade, Open3D, Gmsh, scikit-fem, OpenCV, NumPy/SciPy, trimesh and PrusaSlicer through their published interfaces. Their upstream licenses apply to the corresponding installations.
+
+AGH and its SDK are installed outside this project. The native domain plugin and project integration scripts are included here.
+
+Included browser resources retain their Three.js license in web/vendor/. The included Noto Sans SC font retains its SIL Open Font License in licenses/NotoSansSC-OFL.txt.

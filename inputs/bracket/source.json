@@ -1,0 +1,10 @@
+{
+  "kind": "synthetic_render",
+  "views": 18,
+  "texture": "normal",
+  "bore_appearance": "dark contrasting bores; image-only color segmentation, no masks supplied",
+  "camera_coverage": "orbit",
+  "disclosed_prior": "equal-thickness L bracket, two circular holes in each plate; missing surfaces are prior, not measured",
+  "scale_input": "scale.json",
+  "masks": "computed from RGB by reconstruction; author masks withheld"
+}

@@ -1,0 +1,11 @@
+{
+  "request_model": "mimo-v2.6-pro",
+  "route": "repairforge-vision-v3",
+  "input": [
+    "text",
+    "image"
+  ],
+  "fallback": false,
+  "agh_upstream_sha": "a39272bb6bcb3109584e1bd3abac595789ae365d",
+  "endpoint_environment": "MODEL_BASE_URL"
+}

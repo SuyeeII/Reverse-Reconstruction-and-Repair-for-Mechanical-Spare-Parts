@@ -1,0 +1,26 @@
+{
+  "name": "@repairforge/vision-domain-v3",
+  "version": "3.0.0-dev.3",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "exports": "./index.mjs",
+  "agnes": {
+    "plugins": [
+      {
+        "export": "repairforge",
+        "id": "ext:repairforge-vision-v3/tools",
+        "inject": [
+          "extension"
+        ],
+        "runtime": "in-process"
+      }
+    ],
+    "clientDescriptors": [
+      {
+        "rowId": "ext:repairforge-vision-v3/tools",
+        "path": "./extensions/main/agnes.client.json"
+      }
+    ]
+  }
+}

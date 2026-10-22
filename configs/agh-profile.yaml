@@ -1,0 +1,55 @@
+name: local-dev
+policy:
+  capabilityCeiling:
+  - tools
+  - hooks
+  - slots
+  - events
+  - resources
+  - ui
+  - services
+  - network
+  - network.publicRead
+  - tools.invoke
+  - artifacts
+  - subagent
+provider:
+  package: '@agnes/ai'
+  adapters:
+  - '@agnes/ai'
+  catalog:
+    include: []
+  routes:
+  - route: repairforge-vision-v3
+    api: openai-completions
+    baseUrl: http://127.0.0.1:48908/v1
+    credentialRef: secret://repairforge/mimo-key
+    models:
+    - id: mimo-v2.6-pro
+      name: mimo-v2.6-pro
+      api: openai-completions
+      route: repairforge-vision-v3
+      reasoning: true
+      input:
+      - text
+      - image
+      cost:
+        input: 0
+        output: 0
+        cacheRead: 0
+        cacheWrite: 0
+      contextWindow: 1048576
+      maxTokens: 16384
+      compat:
+        requiresReasoningContentOnAssistantMessages: true
+        thinkingFormat: deepseek
+      baseUrl: http://127.0.0.1:48908/v1
+      toolCallFormats:
+      - native
+      thinkingReplay: native
+      contract_id: null
+adapters:
+  secrets:
+    kind: env
+approvals:
+  mode: 'off'

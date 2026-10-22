@@ -1,0 +1,2 @@
+/* Local OFL font subset makes the workbench readable on fontless Linux hosts. */
+body[data-agnes-region="app"] {--font-sans:RepairForgeUI,sans-serif;--font-mono:RepairForgeUI,monospace;}

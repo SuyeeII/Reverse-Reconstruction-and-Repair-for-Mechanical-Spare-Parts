@@ -1,0 +1,8 @@
+export REPAIRFORGE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export AGH_HOME="$REPAIRFORGE_ROOT/.agh"
+export AGNES_PROFILE=local-dev
+export PATH="$REPAIRFORGE_ROOT/runtime:$REPAIRFORGE_ROOT/.venv/bin:$PATH"
+export PYTHONPATH="$REPAIRFORGE_ROOT/src"
+export LD_LIBRARY_PATH="$REPAIRFORGE_ROOT/runtime/system/usr/lib/x86_64-linux-gnu${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4 NUMEXPR_NUM_THREADS=4
+export NO_PROXY="127.0.0.1,localhost${NO_PROXY:+,$NO_PROXY}"
